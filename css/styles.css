@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+body {
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+/*HEADER*/
+header{
+    display: block;
+    unicode-bidi: isolate;
+}
+.header{
+    position: fixed;
+}
+.header a{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    color:#0a0909;
+    text-decoration: none;
+    filter: invert(1);
+}
+.header img{
+    width: 30px;
+}
+.header h2{
+    color:rgb(22, 12, 12);
+    font-weight:700;
+    font-size: 15px;
+}
+/*MAIN*/
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#index .main{
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.header a{
+    display:flex;
+    gap:10px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*FOOTER*/
+.footer{
+    margin-top: 150px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    
+}
+
+.footer a{
+    color: rgb(39, 26, 26);
+    cursor: pointer;
+    text-decoration: none;
+ 
+}
+.footer img{
+    filter:invert(1);
+    width: 30px;
+ 
+}
+
+
+body:not(#index) .footer{
+    display: flex;
+    justify-content: end;
+    position:absolute;
+    width: 70%;
+    right: 0;
+    bottom: 20px;
+   
+}
+#index section{
+    width: 50%;
+    height: 50vh;
+}
+
+#index .links-container {
+    min-height: 500px;
+}
+
+/*LINK COLLECT*/
+.list-container{
+    display: flex;
+    justify-content: center; 
+ }
+.list{
+    display:flex;
+    flex-direction: column;
+    margin-top: 95px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.title{
+    display: flex;
+    align-items: flex-start;
+    gap:10px;
+}
+.title h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.title img{
+    width:25px;
+    filter:invert(1);
+   
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+input[type='text'],
+input[type='number']{
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #0371d8;
+    border:none;
+    color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.links-container{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    height: 400px;
+    padding: 20px;
+    overflow: scroll;
+}
+.links-container li{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #33333393;
+}
+.links-container li a{
+    text-decoration: none;
+    color:white;
+}
+.links-container button{
+    position: absolute;
+    top:-18px;
+    right: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    color:white;
+    border:none;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: #33333393;
+}
+
+
+/* KEY GENERATE */
+.passwordForm{
+    padding: 20px;
+    max-width: 400px;
+    color: #f4f4f4;
+    border: 15px;
+    border-radius: 15px;
+    background-color: #33333393;
+}
+label{
+    cursor:default;
+}
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input{
+    margin-bottom: 10px;
+}
+.password-result{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:white;
+    word-wrap: break-word;
+   
+      }
+
+.password-result span{
+    padding: 5px;
+    font-weight: normal;
+    color: #ffe5c1;
+    text-align: justify;
+}
+
+
+/* WEATHER*/
+
+.weather{
+    padding:20px;
+    max-width: 400px;
+    color:#f4f4f4;
+    border-radius: 15px;
+    background-color: #33333393;
+}
+
+.weather p{
+    color:#ffe5c1;
+}
+.current-data{
+    display: flex;
+    align-items: center;
+}
+
+.current-grades, 
+.forecast-grades{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    gap: 10px;
+}
+
+.current-grades 
+.weather-icon{
+    width: 80px;
+}
+
+.current-data li img,
+.current-grades img{
+    width: 30px;
+}
+.current-grades>div img{
+    filter:invert(1)
+}
+.current-data li{
+    display: flex;
+    gap:10px;
+    padding: 2px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #868686;
+}
+
+
+.forecastWeather{
+    display: flex;
+    overflow-x: scroll;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+.weather .current-data li {
+    color:#b0b0b0;
+}
+
+.forecastWeather 
+.forecast-grades{
+display: flex;
+flex-direction: column;
+font-size: 15px;
+}
+
+.time-container {
+    padding-bottom: 20px;
+}
+
+.time-container, .pass-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-container .clock-digital {
+    background-color: transparent;
+}
+
+
+/*CLOCK*/
+.weather, .clock-digital{
+    padding: 20px;
+    max-width: 400px;
+    color:#f4f4f4;
+    border-radius: 15px;
+    background-color:#33333393 ;
+}
+
+.clock-digital{
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.time{
+    font-size: 50px;
+    color:rgb(243, 229, 229);
+}
+
+.date{
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgb(243, 229, 229);
+}
+
+.message{
+    margin-top: 20px;
+ }
+
+ @media (max-width:900px){
+    #index section{
+        flex-direction: column;
+       flex-wrap:wrap-reverse;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .list-container{
+        margin-bottom: 50px;
+    }
+  
+ }
+
+
+
+
+
+
